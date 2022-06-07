@@ -247,8 +247,9 @@ function generateUglyName(l = 20) {
     }
 
     let gamer = gen()
-    while (uglyNames.includes(gamer))
+    while (uglyNames.includes(gamer)){
         gamer = gen();
+    }
 
     uglyNames.push(gamer)
 
